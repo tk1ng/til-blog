@@ -1,0 +1,5 @@
+npm run lint-staged
+# Check if there are test files before running tests
+if git diff --cached --name-only | grep -q '\.test\|\.spec'; then
+  npm test
+fi
