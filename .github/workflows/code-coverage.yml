@@ -23,4 +23,5 @@ jobs:
         run: npx vitest run --coverage
 
       - name: Report Coverage
-        uses: davlosert/vitest-coverage-report-action@v2
+        if: always()
+        uses: davelosert/vitest-coverage-report-action@v2
