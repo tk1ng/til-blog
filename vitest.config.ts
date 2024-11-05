@@ -12,6 +12,7 @@ export default defineConfig({
             extension: [".tsx"],
             reporter: ['text', 'json-summary', 'json'],
             reportsDirectory: './coverage',
+            reportOnFailure: true,
         },
     },
 });
